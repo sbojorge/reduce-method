@@ -7,6 +7,10 @@
 
 // Summing an array of numbers:
 
+let nums = [0, 1, 2, 3, 4,]
+let sum = nums.reduce((acc, curr) => acc + curr, 0);
+console.log(sum);
+
 
 const teamMembers = [
   {
@@ -32,6 +36,8 @@ const teamMembers = [
 ];
 
 // Totaling a specific object property
-
+let TotalExperience = teamMembers.reduce((acc, curr) => acc + curr.yrsExperience, 0);
+console.log(TotalExperience);
 
 // Grouping by a property, and totaling it too
+// {Developer : 12, Designer: 4} <--this is what we want!
